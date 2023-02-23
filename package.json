@@ -19,7 +19,7 @@
     "react-scripts": "3.4.1",
     "styled-components": "^5.3.1",
     "typescript": "^3.7.7",
-    "zakeke-configurator-react": "0.0.83"
+    "zakeke-configurator-react": "0.0.140"
   },
   "scripts": {
     "copy": "cpy node_modules/zakeke-configurator-react/dist/globals*.js public/",
