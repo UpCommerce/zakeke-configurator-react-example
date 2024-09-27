@@ -3,29 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^14.0.0",
-    "@testing-library/user-event": "^14.4.3",
-    "@types/jest": "^29.5.1",
-    "@types/lodash": "^4.14.194",
-    "@types/node": "^20.2.3",
-    "@types/react": "^18.2.6",
-    "@types/react-dom": "^18.2.4",
-    "@types/styled-components": "^5.1.26",
-    "cpy-cli": "^4.2.0",
     "lodash": "^4.17.21",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^18",
+    "react-dom": "^18",
     "react-scripts": "5.0.1",
-    "styled-components": "^5.3.10",
-    "typescript": "^5.0.4",
-    "zakeke-configurator-react": "0.1.256"
+    "styled-components": "^6.1.1",
+    "typescript": "^4",
+    "zakeke-configurator-react": "0.1.280-prod"
   },
   "scripts": {
     "copy": "cpy node_modules/zakeke-configurator-react/dist/globals*.js public/",
     "start": "npm run copy && react-scripts start",
     "build": "npm run copy && react-scripts build",
-    "test": "npm run copy && react-scripts test",
     "eject": "npm run copy && react-scripts eject"
   },
   "eslintConfig": {
@@ -42,5 +31,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.6",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/preset-env": "^7.23.6",
+    "@testing-library/jest-dom": "^6.1.5",
+    "@types/jest": "^29.5.11",
+    "@types/lodash": "^4.14.202",
+    "@types/node": "^20.10.4",
+    "@types/react": "^18",
+    "@types/react-color": "^3.0.10",
+    "@types/react-dom": "^18",
+    "@types/react-loader-spinner": "^4.0.0",
+    "@types/styled-components": "^5.1.34",
+    "cpy-cli": "^5.0.0"
   }
 }
