@@ -1,25 +1,11 @@
-import React, { FunctionComponent } from "react";
-import styled from "styled-components";
-import {
-  ZakekeEnvironment,
-  ZakekeViewer,
-  ZakekeProvider,
-  useZakeke,
-} from "zakeke-configurator-react";
-import Selector from "./selector";
+import { useZakeke, ZakekeViewer } from "zakeke-configurator-react"
+import Selector from "./selector"
 
-const Layout = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 40px;
-  height: 100%;
-  padding: 40px;
-`;
+function App() {
+  const { isSceneLoading } = useZakeke()
 
-const App: FunctionComponent<{}> = () => {
-  const { isSceneLoading } = useZakeke();
   return (
-    <Layout>
+    <div className="grid grid-cols-2 gap-10 h-full p-10">
       {isSceneLoading ? (
         <p>Loading scene...</p>
       ) : (
@@ -30,8 +16,8 @@ const App: FunctionComponent<{}> = () => {
           </div>
         </>
       )}
-    </Layout>
-  );
-};
+    </div>
+  )
+}
 
-export default App;
+export default App
