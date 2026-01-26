@@ -6,7 +6,7 @@
   "dependencies": {
     "lodash": "^4.17.21",
     "react": "^18",
-    "react-dom": "^18",
+    "react-dom": "^19",
     "zakeke-configurator-react": "0.1.349"
   },
   "scripts": {
